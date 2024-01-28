@@ -2,7 +2,9 @@ import "./App.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { NavBar } from "./components/NavBar"
 import { Banner } from "./components/Banner"
+import { TechStack } from "./components/TechStack"
 import { Canvas } from "react-three-fiber"
+import SpaceScene from "./components/SpaceScene"
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
           height: "65%",
           zIndex: -1,
         }}
-      ></Canvas>
+      >
+        <SpaceScene />
+      </Canvas>
+      <TechStack />
     </div>
   )
 }

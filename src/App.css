@@ -123,12 +123,11 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 5px 25px;
   font-size: 18px;
   transition: color 0.3s ease;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
   color: rgb(0 255 255) !important;
 }
 span.navbar-text {
@@ -212,6 +211,7 @@ span.navbar-text {
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
   outline: none;
+  border-color: transparent !important;
   box-shadow: none;
 }
 nav.navbar .navbar-toggler-icon {
@@ -231,7 +231,7 @@ nav.navbar .navbar-toggler-icon:before {
   width: 24px;
   position: absolute;
   height: 2px;
-  background-color: rgba(0, 255, 255, 0.7);
+  background-color: white;
   top: 0;
   left: 0;
   content: "";

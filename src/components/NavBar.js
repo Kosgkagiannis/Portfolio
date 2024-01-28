@@ -1,49 +1,56 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import linkedinIcon from "../assets/img/linkedin.svg";
-import cvIcon from "../assets/img/cv.png";
-import githubIcon from "../assets/img/github.svg";
-import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router } from "react-router-dom";
+import { useState, useEffect } from "react"
+import { Navbar, Nav, Container } from "react-bootstrap"
+import linkedinIcon from "../assets/img/linkedin.svg"
+import cvIcon from "../assets/img/cv.png"
+import githubIcon from "../assets/img/github.svg"
+import { HashLink } from "react-router-hash-link"
+import { BrowserRouter as Router } from "react-router-dom"
 
 export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState("home")
+  const [scrolled, setScrolled] = useState(false)
+  const [collapsed, setCollapsed] = useState(true)
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
-        setScrolled(true);
+        setScrolled(true)
       } else {
-        setScrolled(false);
+        setScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll)
 
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
+    setActiveLink(value)
+    setCollapsed(true)
+  }
 
   const downloadFile = () => {
-    const fileUrl = process.env.PUBLIC_URL + "/CV_GKAGIANNIS_Konstantinos.pdf";
+    const fileUrl = process.env.PUBLIC_URL + "/CV_GKAGIANNIS_Konstantinos.pdf"
 
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = "CV_GKAGIANNIS_Konstantinos.pdf";
+    const link = document.createElement("a")
+    link.href = fileUrl
+    link.download = "CV_GKAGIANNIS_Konstantinos.pdf"
 
-    document.body.appendChild(link);
-    link.click();
+    document.body.appendChild(link)
+    link.click()
 
-    document.body.removeChild(link);
-  };
+    document.body.removeChild(link)
+  }
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar
+        expand="md"
+        className={scrolled ? "scrolled" : ""}
+        expanded={!collapsed}
+        onToggle={() => setCollapsed(!collapsed)}
+      >
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -62,7 +69,9 @@ export const NavBar = () => {
               <Nav.Link
                 href="#tech-stack"
                 className={
-                  activeLink === "tech-stack" ? "active navbar-link" : "navbar-link"
+                  activeLink === "tech-stack"
+                    ? "active navbar-link"
+                    : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("tech-stack")}
               >
@@ -110,5 +119,5 @@ export const NavBar = () => {
         </Container>
       </Navbar>
     </Router>
-  );
-};
+  )
+}
