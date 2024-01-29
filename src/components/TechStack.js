@@ -52,7 +52,7 @@ export const TechStack = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <TrackVisibility>
+              <TrackVisibility once>
                 {({ isVisible }) => (
                   <>
                     <div

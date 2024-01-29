@@ -4,6 +4,7 @@ import { NavBar } from "./components/NavBar"
 import { Banner } from "./components/Banner"
 import { TechStack } from "./components/TechStack"
 import { Canvas } from "react-three-fiber"
+import { Projects } from "./components/Projects"
 import SpaceScene from "./components/SpaceScene"
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <SpaceScene />
       </Canvas>
       <TechStack />
+      <Projects />
     </div>
   )
 }

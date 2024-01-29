@@ -22,7 +22,7 @@ export const Banner = () => {
         <Container>
           <Row>
             <Col xs={12} md={6} xl={7}>
-              <TrackVisibility>
+              <TrackVisibility once>
                 {({ isVisible }) => (
                   <>
                     <div
@@ -65,7 +65,7 @@ export const Banner = () => {
               </TrackVisibility>
             </Col>
             <Col xs={12} md={6} xl={5}>
-              <TrackVisibility>
+              <TrackVisibility once>
                 {({ isVisible }) => (
                   <div
                     className={
