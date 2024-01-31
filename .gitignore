@@ -1,7 +1,7 @@
 node_modules
 node_modules
-.env
 .pnp.js
+/src/emailConfig.js
 
 # testing
 /coverage

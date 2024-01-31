@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import "animate.css"
 import { Canvas } from "react-three-fiber"
@@ -6,6 +7,19 @@ import { RotatingPlanetCanvas } from "./canvas/"
 import TrackVisibility from "react-on-screen"
 
 export const Banner = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    handleResize()
+
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
   return (
     <>
       <Canvas
@@ -65,21 +79,23 @@ export const Banner = () => {
               </TrackVisibility>
             </Col>
             <Col xs={12} md={6} xl={5}>
-              <TrackVisibility once>
-                {({ isVisible }) => (
-                  <div
-                    className={
-                      isVisible
-                        ? "animate__animated animate__fadeIn"
-                        : "animate__animated animate__fadeOut"
-                    }
-                  >
-                    <div className="planet-container">
-                      <RotatingPlanetCanvas />
+              {!isMobile && (
+                <TrackVisibility once>
+                  {({ isVisible }) => (
+                    <div
+                      className={
+                        isVisible
+                          ? "animate__animated animate__fadeIn"
+                          : "animate__animated animate__fadeOut"
+                      }
+                    >
+                      <div className="planet-container">
+                        <RotatingPlanetCanvas />
+                      </div>
                     </div>
-                  </div>
-                )}
-              </TrackVisibility>
+                  )}
+                </TrackVisibility>
+              )}
             </Col>
           </Row>
         </Container>

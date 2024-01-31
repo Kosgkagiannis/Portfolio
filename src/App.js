@@ -5,6 +5,7 @@ import { Banner } from "./components/Banner"
 import { TechStack } from "./components/TechStack"
 import { Canvas } from "react-three-fiber"
 import { Projects } from "./components/Projects"
+import { ContactForm } from "./components/ContactForm"
 import SpaceScene from "./components/SpaceScene"
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       </Canvas>
       <TechStack />
       <Projects />
+      <ContactForm />
     </div>
   )
 }
