@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap"
 import { ProjectCard } from "./ProjectCard"
-import costsquad from "../assets/img/costsquad.jpg"
-import vrProject from "../assets/img/vr-project.png"
-import heatmap from "../assets/img/heatmap.png"
+import costsquad from "../assets/img/costsquad.webp"
+import vrProject from "../assets/img/vr-project.webp"
+import heatmap from "../assets/img/heatmap.webp"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
 

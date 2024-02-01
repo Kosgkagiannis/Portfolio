@@ -258,7 +258,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 0 0;
-  background-image: url("./assets/img/bg-image.jpg");
+  background-image: url("./assets/img/bg-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;

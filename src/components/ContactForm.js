@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 import { Container, Row } from "react-bootstrap"
-import contactImg from "../assets/img/contact-img.png"
+import contactImg from "../assets/img/contact-img.webp"
 import emailSent from "../assets/img/email-sent.gif"
 import emailLoading from "../assets/img/email-loading.gif"
 import "animate.css"
