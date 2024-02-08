@@ -8,16 +8,6 @@ import TrackVisibility from "react-on-screen"
 export const Banner = () => {
   return (
     <>
-      <Canvas
-        style={{
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          pointerEvents: "none",
-        }}
-      >
-        <SpaceScene />
-      </Canvas>
       <section className="banner" id="home">
         <Container>
           <Row>
@@ -51,8 +41,9 @@ export const Banner = () => {
                       }
                     >
                       <p>
-                        I hold a Master's degree in Computer Engineering and
-                        Informatics, specializing in various programming
+                        Hello, my name is Konstantinos but feel free to call me
+                        Kostas! I hold a Master's degree in Computer Engineering
+                        and Informatics, specializing in various programming
                         languages. My experience as a Front End Developer has
                         provided me with a solid foundation, and hands-on work
                         has enhanced my ability to adapt and innovate. I am
@@ -70,7 +61,7 @@ export const Banner = () => {
                   <div
                     className={
                       isVisible
-                        ? "animate__animated animate__fadeIn"
+                        ? "animate__animated animate__fadeInLeft"
                         : "animate__animated animate__fadeOut"
                     }
                   >

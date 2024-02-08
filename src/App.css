@@ -255,10 +255,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+.Content {
+  position: relative;
+  z-index: 1;
+}
+
 .banner {
   margin-top: 0;
   padding: 260px 0 0 0;
-  background-image: url("./assets/img/bg-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -267,6 +271,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
+  border-radius: 10px;
   background: linear-gradient(
     135deg,
     rgba(0, 255, 255, 0.7) 0%,
