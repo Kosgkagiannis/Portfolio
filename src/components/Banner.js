@@ -1,11 +1,23 @@
 import { Container, Row, Col } from "react-bootstrap"
 import "animate.css"
+import { Canvas } from "react-three-fiber"
+import SpaceScene from "./SpaceScene"
 import { RotatingPlanetCanvas } from "./canvas/"
 import TrackVisibility from "react-on-screen"
 
 export const Banner = () => {
   return (
     <>
+      <Canvas
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          pointerEvents: "none",
+        }}
+      >
+        <SpaceScene />
+      </Canvas>
       <section className="banner" id="home">
         <Container>
           <Row>
