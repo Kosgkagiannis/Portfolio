@@ -56,21 +56,11 @@ export const Banner = () => {
               </TrackVisibility>
             </Col>
             <Col xs={12} md={6} xl={5}>
-              <TrackVisibility once>
-                {({ isVisible }) => (
-                  <div
-                    className={
-                      isVisible
-                        ? "animate__animated animate__fadeInLeft"
-                        : "animate__animated animate__fadeOut"
-                    }
-                  >
-                    <div className="planet-container">
-                      <RotatingPlanetCanvas />
-                    </div>
-                  </div>
-                )}
-              </TrackVisibility>
+              <div className={"animate__animated animate__fadeIn"}>
+                <div className="planet-container">
+                  <RotatingPlanetCanvas />
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>
