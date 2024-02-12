@@ -29,6 +29,10 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         return "https://github.com/Kosgkagiannis/VR-Ship-Control-Room"
       case "ecofriendly":
         return "https://github.com/Kosgkagiannis/EcoFriendly"
+      case "cryptodeets":
+        return "https://github.com/Kosgkagiannis/CryptoDeets"
+      case "dutydart":
+        return "https://github.com/Kosgkagiannis/DutyDart"
       default:
         return "/"
     }
@@ -40,9 +44,7 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         {({ isVisible }) => (
           <div
             className={
-              isVisible
-                ? "animate__animated animate__zoomIn"
-                : "animate__animated animate__zoomOut"
+              isVisible ? "animate__animated animate__zoomIn" : "invisible"
             }
           >
             <div
