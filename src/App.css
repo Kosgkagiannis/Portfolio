@@ -371,10 +371,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     rgb(0 0 0 / 70%) 100%
   );
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .skill-bx {
   text-align: center;
-  padding: 250px 50px;
 }
 
 .skill h2 {
@@ -407,8 +410,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project {
-  padding: 80px 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  min-height: 100vh;
+  padding: 80px 0;
 }
 .project h2 {
   font-size: 45px;
@@ -558,12 +565,16 @@ h5 {
 }
 
 .contact {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     0deg,
     rgba(0, 255, 255, 0.7) 0%,
     rgb(0 0 0 / 70%) 100%
   );
-  padding: 60px 0 200px 0;
+  padding: 60px 0 0 0;
+  min-height: 100vh;
 }
 .contact img {
   width: 92%;
