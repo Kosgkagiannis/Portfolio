@@ -92,7 +92,7 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a
-                  href="https://www.linkedin.com/in/konstantinos-gkagiannis-924b60172"
+                  href="https://www.linkedin.com/in/konstantinos-gkagiannis"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

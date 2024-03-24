@@ -92,11 +92,11 @@ export const ContactForm = () => {
   }
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" >
       <Container>
         <TrackVisibility once>
           {({ isVisible }) => (
-            <div
+            <div id="connect"
               className={
                 isVisible
                   ? "animate__animated animate__zoomIn"
