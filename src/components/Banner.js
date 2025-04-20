@@ -41,14 +41,14 @@ export const Banner = () => {
                       }
                     >
                       <p>
-                        Hello, my name is Konstantinos but feel free to call me
-                        Kostas! I hold a Master's degree in Computer Engineering
-                        and Informatics, specializing in various programming
-                        languages. My experience as a Front End Developer has
-                        provided me with a solid foundation, and hands-on work
-                        has enhanced my ability to adapt and innovate. I am
-                        enthusiastic about using technology to tackle real-world
-                        challenges.
+                        Hello, my name is Konstantinos, but feel free to call me
+                        Kostas! I hold a Master’s degree in Computer Engineering
+                        and Informatics and have worked across both Front End
+                        and Full Stack development. This experience has given me
+                        a well-rounded skill set and a deep understanding of
+                        building robust, user-focused applications. I’m driven
+                        by the challenge of using technology to create meaningful
+                        and efficient solutions.
                       </p>
                     </div>
                   </>
